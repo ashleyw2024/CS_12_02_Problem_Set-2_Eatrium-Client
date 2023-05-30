@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controllers.CartActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="310dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="50dp"
+        android:text="Orders"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/orderIDInput"
+        android:layout_width="229dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginBottom="227dp"
+        android:ems="10"
+        android:hint="Enter Order ID for delete"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="109dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="224dp"
+        android:onClick="deleteOrder"
+        android:text="Delete Order"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/orderIDInput" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="141dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginBottom="107dp"
+        android:onClick="goBackToMenu"
+        android:text="Go back to Menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderIDInput" />
+
+    <TextView
+        android:id="@+id/orderList"
+        android:layout_width="378dp"
+        android:layout_height="252dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="63dp"
+        android:text="TextView"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/orderIDInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+</androidx.constraintlayout.widget.ConstraintLayout>
